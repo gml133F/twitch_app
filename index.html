@@ -1,0 +1,84 @@
+<html>
+
+<head>
+  <title>twitch app</title>
+  <!-- Font Awesome CDN -->
+  <script src="https://use.fontawesome.com/8bd0bb916b.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="navbar">
+      <div class="tabs">
+        <div class="search single_tab" id="showModal">
+          <i class="fa fa-plus" aria-hidden="true"></i> Add channel
+        </div>
+        <div id="all" class="single_tab">
+          All
+        </div>
+        <div id="online" class="single_tab">
+          Online
+        </div>
+        <div id="offline" class="single_tab">
+          Offline
+        </div>
+      </div>
+      <div class="slider">
+        <hr>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div id="followed_channels">
+        <div id="channels_online">
+        </div>
+        <div id="channels_offline">
+        </div>
+        <div id="channels_closed">
+        </div>
+        <br>
+        <a href="#" id="default">Restore default channels</a>
+      </div>
+    </div>
+
+
+    <div class="modal_bg">
+      <div class="modal_main">
+        <button class="hide_modal">X</button>
+        <div>
+          <h2>Search for a Twitch.tv streamer</h2>
+        </div>
+        <div>
+          <form action="#" id="search_form">
+            <div class="result_flex">
+              <div>
+                <input type="text" name="search_channel" id="search_channel" placeholder="Type channel name here">
+              </div>
+              <div class="modal_buttons">
+                <button id="search" type="submit">Search</button>
+                <button id="reset_search">Clear</button>
+              </div>
+            </div>
+            <div id="search_result">
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="channel_notification"></footer>
+    <footer class="footer">&copy;GML 2017 | Twitch.tv App |<a href="https://www.freecodecamp.com/gml133f" style="margin-left: 5px" target="_blank">FCC <i class="fa fa-free-code-camp"></i></a></footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>

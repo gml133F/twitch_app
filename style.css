@@ -1,0 +1,377 @@
+body {
+	background: #4b307b;
+	font-family: Roboto;
+	color: rgb(230,230,255);
+	max-width: 100%;
+	margin: 0;
+	overflow-y: scroll;
+}
+
+button {
+	background: rgb(230,230,255);
+	color: #4b307b;
+	cursor: pointer;
+	border: none;
+	border-radius: 3px;
+}
+
+h1 {
+	margin: 80px auto 0 auto;
+	text-align: center;
+}
+
+
+span {
+	margin-right: 12px;
+	margin-left: 12px;
+	margin-bottom: 10px;
+	padding: 15px;
+	font-size: 18px;
+}
+
+.wrapper {
+	max-width: 100%;
+}
+
+/*  navbar */ 
+
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba(0,0,0,1);
+}
+
+.tabs {
+	display: flex;
+	cursor: pointer;
+	justify-content: space-between;
+	margin: auto;
+	background: rgb(0,0,0,1);
+	background: rgba(0,0,0,1);
+	border: 1px solid black;
+	height: 40px;
+	max-width: 900px;
+}
+
+.single_tab {
+	text-align: center;
+	display: block;
+	flex-basis: 33%;
+	margin: 0;
+	padding: 10px;
+}
+
+
+
+.slider {
+	max-width: 900px;
+	margin: auto;
+	background: rgba(0,0,0,0.6);
+}
+
+
+hr {
+	transition: 0.3s;
+	margin: 0 0 0 225px;
+	background-color: rgb(230,230,255);
+	height: 4px;
+
+}
+
+
+
+/* MODAL */
+
+.modal_bg {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(0,0,0, 0.7);
+	display: none;
+}
+
+.modal_main {
+	position: relative;
+	top: 20px;
+	width: 500px;
+	max-width: 75%;
+	height: 500px;
+	margin: auto;
+	background: #4b307b;
+	box-shadow: 6px 7px 10px 1px rgba(0,0,0,0.3);
+	padding: 20px;
+	border-radius: 20px;
+	overflow: auto;
+
+}
+
+.hide_modal {
+	margin: 0;
+	float: right;
+}
+
+.hide_modal:after {
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
+}
+
+.modal_main h2 {
+	margin: 40px auto 20px;
+	display: block;
+}
+
+.modal_main .channel_logo {
+	border-radius: 17px;
+	margin-top: 20px;
+}
+
+.modal_buttons {
+	margin: 0 5px;
+}
+
+.result_info {
+	flex-basis: 66%;
+	display: block;
+	flex-wrap: wrap;
+}
+
+.result_logo {
+	flex-basis: 33%;
+}
+
+.result_flex {
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.container {
+	margin: 80px auto;
+	max-width: 900px;
+}
+
+.result {
+	display: none;
+}
+
+.result_info .channel_name {
+	margin: 20px 0 5px 0;
+} 
+
+
+/* displayed channels  */
+
+.info {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 75%;
+}
+
+.logoDiv {
+	flex-basis: 15%;
+}
+
+
+
+.infoName {
+	margin: auto 0;
+}
+
+.infoStatus {
+	margin: auto 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.channel_logo {
+	height: 130px;
+	width: 130px;
+	cursor: pointer;
+	padding: 0;
+	border-top-left-radius: 17px;
+	border-bottom-left-radius: 17px;
+	border-right: 6px solid #4b307b;
+}
+
+
+.channel_name {
+	cursor: pointer;
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 12px;
+	padding-top: 10px;
+}
+
+.followed {
+
+	margin-top: 10px;
+	background-color: rgba(0,0,0,0.5);
+	height: 130px;
+	border-radius: 17px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.followed span {
+	padding-top: 10px;
+	padding: 10px;
+
+}
+
+.delete {
+	border-left: 6px solid #4b307b;
+	height: 110px;
+	padding: 10px;
+	display: flex;
+	cursor: pointer;
+	flex-basis: 5%;
+}
+
+.delete i {
+	margin:auto;
+}
+
+#add_channel {
+	display: none;
+	font-size: 20px;
+	padding: 5px 10px;
+	margin-top: 40px;	
+}
+
+#channels_online .channel_status {
+	color: rgb(60,210,67);
+}
+
+
+/* FORM */
+
+input {
+	background-color: rgb(230,230,255);
+	font-size: 20px;
+	border: 1px solid rgba(0,0,0, 0.7);
+	border-radius: 10px;
+	padding:3px;
+}
+
+form button {
+	font-size: 20px;
+	padding : 4px;
+}
+
+
+/* Footers  */
+
+.footer {
+	text-align: center;
+	font-size: 14px;
+	margin: 30px 0 0 0;
+	color: #fff;
+	background-color: #000;
+	padding: 5px 0;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+footer a:visited, footer a:link, footer a:hover {
+	color: #fff;
+}
+
+.channel_notification {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: #fff;
+	background: rgba(0,0,0,0.7);
+	font-size: 18px;
+	padding: 7px;
+}
+
+/* OTHERS */
+
+#default {
+	margin-bottom: 70px;
+	color: rgb(230,230,255);
+	padding: 20px;
+}
+
+
+@media (max-width: 600px) {
+	.modal_main {
+		width: 95%;
+		margin: auto;
+	}
+}
+
+@media (max-width: 950px) {
+	.container {
+		max-width: 95%
+	}
+}
+
+@media (max-width: 760px) {
+	
+	span {
+		font-size: 12px;
+	}
+
+	.channel_logo {
+		width: 70px;
+		height: 70px;
+		border-bottom-left-radius: 0;
+		border-bottom: 6px solid #4b307b;
+		border-left-color: #4b307b;
+	}
+
+	.navbar {
+		font-size : 12px;
+	}
+}
+
+@media (max-width: 375px) {
+	.channel_name {
+		font-size: 16px;
+	}
+
+	.followed {
+		height: 200px;
+	}
+
+	.delete {
+		height: 200px;
+		padding: 5px;
+	}
+
+	.followed span {
+		margin-left: 3px;
+	}
+
+}
+
+@media (min-width: 700px) {
+	::-webkit-scrollbar {
+		width: 12px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: rgba(0,0,0,1);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: rgba(75,48,123, 0.6);
+		border-radius: 10px;
+	}
+}
+
+
